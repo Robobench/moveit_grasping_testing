@@ -295,7 +295,7 @@ if __name__=='__main__':
     #empty_pose = Pose()
     possible_grasps = retrieveGrasps(pose_grasp.pose) # using grasp generator AS
     #possible_grasps = createRandomGrasps(pose_grasp.pose, 136)
-    publish_poses_grasps(possible_grasps)
+    #publish_poses_grasps(possible_grasps)
     goal = createPickupGoal("right_arm_torso", "part", pose_grasp, possible_grasps)
     rospy.loginfo("Sending goal")
     pickup_ac.send_goal(goal)

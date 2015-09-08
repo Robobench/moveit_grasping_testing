@@ -27,7 +27,8 @@ import object_recognition_clusters.cluster_bounding_box_finder as cluster_boundi
 
 import numpy as np
 
-from reem_tabletop_grasping.msg import GraspObjectGoal, GraspObjectAction
+from reem_tabletop_grasping.msg import ObjectManipulationGoal, ObjectManipulationAction
+    #GraspObjectGoal, GraspObjectAction
 
 from std_srvs.srv import Empty, EmptyRequest
 
